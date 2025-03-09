@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/baackground.jpg');
+    background-size: cover;
+    color: #a91111;
+    text-align: center;
+}
+
+nav {
+    margin: 20px;
+}
+
+img {
+    width: 400px;  /* Sets width to 400 pixels */
+    height: 300px; /* Sets height to 300 pixels */
+    object-fit: cover; /* Ensures the image fills the space properly */
+    border: 2px solid #000;
+}
