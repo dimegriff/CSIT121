@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Image Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="image1.html">JPG Image</a>
+        <a href="image2.html">BMP Image</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+
+    <h1>GIF Image Example</h1>
+    <img src="images/royal3.gif" alt="Example GIF">
+    <p>This is an example of a GIF image. I chose this because it reminds me of Royal's puppy stage.</p>
+    <p><strong>File Type:</strong> GIF (Graphics Interchange Format)</p>
+    <p><a href="https://tenor.com/search/bichon-gifs" target="_blank">Image Source</a></p>
+ 
+ <script>
+    function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";  // Add 'responsive' class to show the menu
+        } else {
+            x.className = "navbar";  // Remove 'responsive' class to hide the menu
+        }
+    }
+</script>
+</body>
+</html>

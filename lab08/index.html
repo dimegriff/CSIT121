@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Responsive Navigation Bar with Accessibility Enhancements -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="image1.html" aria-label="JPG Image">JPG Image</a>
+        <a href="image2.html" aria-label="BMP Image">BMP Image</a>
+        <a href="image3.html" aria-label="GIF Image">GIF Image</a>
+        
+        <!-- Hamburger menu for mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</a>
+        <i class="fa fa-bars"></i> </div>
+
+    <header>
+        <h1>Welcome to My Image Gallery</h1>
+        <p>Select an image format to learn more.</p>
+    </header>
+
+   
+  <!-- JavaScript here -->
+  <script>
+    function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";  // Add 'responsive' class to show the menu
+        } else {
+            x.className = "navbar";  // Remove 'responsive' class to hide the menu
+        }
+    }
+</script>
+</body>
+</html>
