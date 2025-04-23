@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Stranger Things Tier List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="tierlist.html">Tier List</a> | 
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Contact & Feedback</h1>
+  <p style="text-align:center;">Let us know your thoughts about our Stranger Things tier list!</p>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required aria-required="true">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required aria-required="true">
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" required aria-required="true"></textarea>
+
+    <fieldset>
+      <legend>Who is your favorite character from the tier list?</legend>
+      <input type="radio" id="el" name="favorite" value="Eleven">
+      <label for="el">Eleven</label><br>
+
+      <input type="radio" id="dustin" name="favorite" value="Dustin">
+      <label for="dustin">Dustin</label><br>
+
+      <input type="radio" id="lucas" name="favorite" value="Lucas">
+      <label for="lucas">Lucas</label><br>
+
+      <input type="radio" id="max" name="favorite" value="Max">
+      <label for="max">Max</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which characters would you rank higher?</legend>
+      <input type="checkbox" id="jonathan" name="moreOf" value="Jonathan">
+      <label for="jonathan">Jonathan</label><br>
+
+      <input type="checkbox" id="lucasCheckbox" name="moreOf" value="Lucas">
+      <label for="lucasCheckbox">Lucas</label><br>
+
+      <input type="checkbox" id="maxCheckbox" name="moreOf" value="Max">
+      <label for="maxCheckbox">Max</label><br>
+    </fieldset>
+
+    <label for="season">Which season is your favorite?</label>
+    <select id="season" name="season">
+      <option value="1">Season 1</option>
+      <option value="2">Season 2</option>
+      <option value="3">Season 3</option>
+      <option value="4">Season 4</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
