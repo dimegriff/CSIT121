@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Web Authentication is Used</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>How Web Authentication is Used</h1>
+    <nav>
+      <a href="index.html">What is it?</a> |
+      <a href="importance.html">Why it's Important</a> |
+      <a href="usage.html">How it's Used</a> |
+      <a href="sources.html">Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>How Web Authentication Works in Practice</h2>
+    <p>
+      Web Authentication is used when websites allow users to log in with something more secure than a password. For example, a website might let users register a fingerprint scanner on their phone or use a USB security key. When the user tries to log in, they simply touch the fingerprint reader or insert their key instead of typing a password. This makes the process quicker and more secure.
+    </p>
+    <p>
+      Major companies like Google, Microsoft, and GitHub already use WebAuthn. On GitHub, for instance, developers can register a hardware key for logging in. When logging in, GitHub checks that the security key matches the one stored during registration, using public-key cryptography. This proves the user’s identity without needing a password, and keeps their account protected from phishing and hacking.
+    </p>
+    <p>
+      Developers implement WebAuthn using JavaScript and browser APIs. The browser communicates with the user's device to handle authentication and then returns a response to the server. All of this is done behind the scenes, making it smooth for users. As more websites adopt WebAuthn, users will have more secure options and developers will have better tools to protect personal information online.
+    </p>
+  </main>
+
+  <footer>
+    <p>Lab 10: Web Standards Project</p>
+  </footer>
+</body>
+</html>
